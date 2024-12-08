@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.webintercontrol">
+    <children>
+        <AnchorPane prefHeight="600.0" prefWidth="149.0">
+            <children>
+                <Button fx:id="butt_logout2" layoutX="18.0" layoutY="516.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="131.0" style="-fx-background-color: CYAN; -fx-cursor: hand;" text="Log out">
+                    <font>
+                        <Font name="Arial Unicode MS" size="20.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="219.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@web.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="6.0" layoutY="150.0" prefHeight="118.0" prefWidth="158.0" text="Checkout &#10;other &#10;difficulties:&#10;&#10;">
+                    <font>
+                        <Font name="System Bold Italic" size="26.0" />
+                    </font>
+                </Label>
+                <Button fx:id="itbegin" layoutX="42.0" layoutY="287.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-cursor: hand;" text="Beginner" />
+                <Button fx:id="itadv2" layoutX="42.0" layoutY="325.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="84.0" style="-fx-background-color: white; -fx-cursor: hand;" text="Advanced" />
+            <Label layoutX="6.0" layoutY="363.0" prefHeight="66.0" prefWidth="158.0" text="Other&#10;Domains:">
+               <font>
+                  <Font name="System Bold Italic" size="26.0" />
+               </font>
+            </Label>
+            <Button fx:id="iot" layoutX="38.0" layoutY="445.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-cursor: hand;" text="IOT" />
+            <Button fx:id="it" layoutX="97.0" layoutY="445.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-cursor: hand;" text="IT" />
+            </children></AnchorPane>
+        <SplitPane dividerPositions="0.09224598930481283" orientation="VERTICAL" prefHeight="600.0" prefWidth="637.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <Label layoutX="14.0" layoutY="-4.0" prefHeight="59.0" prefWidth="123.0" text="Intermediate Section">
+                            <font>
+                                <Font name="System Bold Italic" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <ScrollPane prefHeight="541.0" prefWidth="630.0">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="540.0" prefWidth="630.0" />
+                            </content>
+                        </ScrollPane>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</HBox>
